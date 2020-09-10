@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>signin</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="signin.story" title="">
+<meta>
+<property keyword="@" name="Sign" value="In Fungsionality"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">User</inOrderTo>
+  <asA keyword="I want to">Sign In on LinkedIn</asA>
+  <iWantTo keyword="So that">i can enter my LinkedIn homepage</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="input valid email and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a valid email and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is my linkedin homepage</step>
+</scenario>
+<scenario keyword="Scenario:" title="input valid phone number and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a valid phone number and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is my linkedin homepage</step>
+</scenario>
+<scenario keyword="Scenario:" title="input valid phone number (without nol e.g 8983934152) and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a valid phone number (without nol e.g 8983934152) and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is my linkedin homepage</step>
+</scenario>
+<scenario keyword="Scenario:" title="input valid phone number (without provider code) and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a valid phone number (without provider code) and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is be sure to include + and your country code</step>
+</scenario>
+<scenario keyword="Scenario:" title="blank the email/phone number field and input valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I leave email/phone number field blank and enter valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is warning please enter an email address or phone number</step>
+</scenario>
+<scenario keyword="Scenario:" title="input valid email/phone number and blank the password text field">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a valid email/phone number and leave password field blank</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is warning please enter a password</step>
+</scenario>
+<scenario keyword="Scenario:" title="blank all text field">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I leave email/phone number and password field blank</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is warning please enter an email address or phone number</step>
+</scenario>
+<scenario keyword="Scenario:" title="input invalid email format number and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give invalid email format number and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is be sure to include + and your country code</step>
+</scenario>
+<scenario keyword="Scenario:" title="input invalid email format character and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a invalid email format character and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is please enter a valid username</step>
+</scenario>
+<scenario keyword="Scenario:" title="input invalid email format spesial character and valid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a invalid email format spesial character and valid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is be sure to include + and your country code</step>
+</scenario>
+<scenario keyword="Scenario:" title="input invalid email/phone number and invalid password">
+<step outcome="successful">Given that i am on the sign in page and registered LinkedIn account</step>
+<step outcome="successful">When I give a invalid email/phone number and invalid password</step>
+<step outcome="successful">And I press button sign in</step>
+<step outcome="successful">Then The outcome is we don&apos;t recognize that email/phone number</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>findacolleague</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">findacolleague.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@Find A Colleague Fungsionality</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input valid first name and valid last name</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I give a valid first name and valid last name</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is my colleague profiles suggest</div>
+</div>
+<div class="scenario">
+<h2>Scenario: blank the first name text field and input valid last name</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I leave first name field blank and enter valid last name</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is my colleague profiles suggest</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input valid first name and blank the last name text field</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I give a valid first name and leave last name field blank</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is my colleague profiles suggest</div>
+</div>
+<div class="scenario">
+<h2>Scenario: blank all text field</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I leave first name and last name field blank</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is button search disabled</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input invalid first name format number and valid last name</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I give a invalid first name format number and valid last name</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is no suggest colleague profile</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input valid first name and invalid last name format number</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I give a valid first name and invalid last name format number</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is my colleague profiles suggest</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input invalid first name and invalid last name (use format number/special character)</h2>
+<div class="step successful">Given that i am on the find a colleague page</div>
+<div class="step successful">When I give a invalid first name and invalid last name</div>
+<div class="step successful">And I press button search</div>
+<div class="step successful">Then The outcome is no suggest colleague profile</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
