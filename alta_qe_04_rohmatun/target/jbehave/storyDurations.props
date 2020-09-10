@@ -1,0 +1,9 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Mar 21 19:11:55 WIB 2019
+findacolleague.story=0
+threads=1
+total=0
+signin.story=0
+signup.story=0
+threadAverage=0
+forgotpassword.story=0

@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>signup</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">signup.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@Sign Up Fungsionality</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> User</div>
+<div class="element asA"><span class="keyword asA">I want to</span> Sign Up on linkedIn</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> i can get new account and can access feature on linkedIn</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I enter valid data on the all text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is user into the page complete profile and get notification welcome in linkedin</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly and blank the first name text field</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I keep the first name field blank and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is get a warning please enter your first name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly and blank the last name text field</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I keep the last name field blank and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is get a warning please enter your last name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly and blank the email/phone number text field</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I keep the email/phone number field blank and enter all valid data on text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is get a warning please enter your email address or mobile number</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly and blank the password text field</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I keep the password field blank and enter all valid data on text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is get a warning please enter your password</div>
+</div>
+<div class="scenario">
+<h2>Scenario: fill the blank all teks field</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a blank all teks field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is get a warning please enter your first name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except first name text field (e.g 1234567)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid first name with format number and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid first name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except first name text field (e.g @@#$&amp;*^)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid first name with format special character and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid first name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except last name text field (e.g 1234567)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid last name with format number and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid last name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except last name text field (e.g @@#$&amp;*^)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid last name with format special character and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid last name</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except email text field (e.g abcdefghijklmnopqrstuvwxyz)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid email with format character and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid email address or mobile number</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except email text field (e.g @#$%^&amp;*&amp;^%$#@#$%^&amp;*%)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid email with format special character and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid email address or mobile number</div>
+</div>
+<div class="scenario">
+<h2>Scenario: input all data correctly except phone number text field (use unregistered phone number)</h2>
+<div class="step successful">Given user already on the www.linkedin.com</div>
+<div class="step successful">When I give a invalid phone number with format special character and enter all valid data on the text field</div>
+<div class="step successful">And I press button join now</div>
+<div class="step successful">Then The outcome is notification please enter a valid email address or mobile number</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
